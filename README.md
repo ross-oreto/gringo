@@ -3,17 +3,12 @@ Plain jane Spring that is programmatically configured and runs locally with embe
 
 run app
 ```bash
-./gradlew runShadow
+./gradlew appRun 
 ```
 
-# create jar
+# create war 
 ```bash
-./gradlew clean shadowJar
-```
-
-# run jar
-```bash
-java -jar build/libs/gringo-1.0.0.jar
+./gradlew clean war 
 ```
 
 # help
