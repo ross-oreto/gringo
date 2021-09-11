@@ -15,3 +15,8 @@ run app
 ```bash
 java -jar build/libs/gringo-1.0.0.jar
 ```
+
+# help
+https://docs.spring.io/spring-framework/docs/current/reference/html/
+https://gretty-gradle-plugin.github.io/gretty-doc/Getting-started.html
+
