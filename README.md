@@ -1,5 +1,5 @@
 ### Gringo
-Plain jane Spring that is programmatically configured and runs locally with embedded tomcat.
+Plain jane Spring that is programmatically configured and runs locally with embedded jetty/tomcat.
 
 run app
 ```bash
