@@ -6,12 +6,12 @@ run app
 ./gradlew appRun 
 ```
 
-# create war 
+create war 
 ```bash
 ./gradlew clean war 
 ```
 
 # help
-https://docs.spring.io/spring-framework/docs/current/reference/html/
-https://gretty-gradle-plugin.github.io/gretty-doc/Getting-started.html
+ - https://docs.spring.io/spring-framework/docs/current/reference/html/
+ - https://gretty-gradle-plugin.github.io/gretty-doc/Getting-started.html
 
