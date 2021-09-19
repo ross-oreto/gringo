@@ -15,7 +15,7 @@ apply plugin: 'org.gretty'
 group 'io.oreto.gringo'
 version '1.0.0'
 
-def springVersion='5.3.9'
+def springVersion='5.3.10'
 def junit = '5.7.0'
 
 sourceCompatibility = 16
@@ -29,7 +29,7 @@ dependencies {
     implementation "org.springframework:spring-webmvc:${springVersion}"
 
     // Spring does not yet support jakarta
-    implementation "javax.servlet:javax.servlet-api:3.1.0"
+    compileOnly "javax.servlet:javax.servlet-api:3.1.0"
 
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junit}"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junit}"
