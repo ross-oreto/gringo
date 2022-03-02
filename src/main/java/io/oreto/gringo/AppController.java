@@ -13,6 +13,6 @@ public class AppController {
     @GetMapping
     public Jackson5Response displayWelcomeMessage() {
         Map<String, String> data = new HashMap<String, String>(){{ put("welcome", "Gringo!"); }};
-        return new Jackson5Response(data);
+        return Jackson5Response.of(data);
     }
 }

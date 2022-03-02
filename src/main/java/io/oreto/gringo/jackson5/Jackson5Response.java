@@ -4,13 +4,19 @@ import io.oreto.jackson.Fields;
 
 
 public class Jackson5Response {
+    public static Jackson5Response of(Object body) {
+        return new Jackson5Response(body);
+    }
+    public static Jackson5Response empty() {
+        return new Jackson5Response();
+    }
+
     Object body;
     private Fields fields = Fields.Include("");
     private String name = "";
     private boolean pretty;
 
     public Jackson5Response() {
-        fields = Fields.Include(null);
     }
 
     public Jackson5Response(Object body) {
