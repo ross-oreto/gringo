@@ -41,7 +41,7 @@ public class Jackson5HttpMessageConverter extends AbstractHttpMessageConverter<O
             , HttpOutputMessage outputMessage) throws IOException, HttpMessageNotWritableException {
         Jackson5Response j5Response = (Jackson5Response) response;
         outputMessage.getBody().write(
-                Jackson5.getOrDefault(j5Response.getName())
+                Jackson5.find(response.getClass()).orElse(Jackson5.getOrDefault(j5Response.getName()))
                         .serialize(j5Response.getBody(), j5Response.getFields(), j5Response.isPretty())
                         .getBytes(StandardCharsets.UTF_8)
         );
