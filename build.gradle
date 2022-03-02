@@ -15,11 +15,11 @@ apply plugin: 'org.gretty'
 group 'io.oreto.gringo'
 version '1.0.0'
 
-def springVersion='5.3.15'
-def junit = '5.7.0'
+def springVersion='5.3.16'
+def junit = '5.8.2'
 
-sourceCompatibility = 17
-targetCompatibility = 17
+sourceCompatibility = 8
+targetCompatibility = 8
 
 repositories {
     mavenCentral()
@@ -27,6 +27,7 @@ repositories {
 
 dependencies {
     implementation "org.springframework:spring-webmvc:${springVersion}"
+    implementation "io.github.ross-oreto.jackson5:jackson5:1.0.7"
 
     // Spring does not yet support jakarta
     compileOnly "javax.servlet:javax.servlet-api:3.1.0"
