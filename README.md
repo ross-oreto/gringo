@@ -1,37 +1,22 @@
 ### Gringo
-Plain jane Spring that is programmatically configured and runs locally with embedded jetty/tomcat.
+Basic boot project
 
 run app
 ```bash
-./gradlew appRun 
+./mvnw spring-boot:run 
 ```
-http://localhost:8080/gringo
 
-create war 
+build app
 ```bash
-./gradlew clean war 
+./mvnw package 
 ```
 
-### Maven (Optional) 
-Use maven by renaming maven.xml to pom.xml and deleting:
- - build.gradle
- - gradle.properties
- - gradlew
- - gradlew.bat
- - gradle directory
 
-run app (Maven)
-```bash
-mvn jetty:run 
-```
-http://localhost:8080/gringo
+### Reference Documentation
+For further reference, please consider the following sections:
 
-create war (Maven)
-```bash
-mvn clean war 
-```
+* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.0.1/maven-plugin/reference/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.0.1/maven-plugin/reference/html/#build-image)
 
-# help
- - https://docs.spring.io/spring-framework/docs/current/reference/html/
- - https://gretty-gradle-plugin.github.io/gretty-doc/Getting-started.html
 
